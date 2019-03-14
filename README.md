@@ -6,3 +6,4 @@ html5 class
 
 - wk02 upload
   - 파일 20개 올림.
+  - HTML 태그를 배움.
