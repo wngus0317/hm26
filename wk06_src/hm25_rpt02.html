@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm26 : CSS3 advanced</title>
+		<style>
+            
+            @keyframes bomb {
+                from { font-size: 100%;}
+                to { font-size: 200%}
+            }
+            h3{
+                animation-name: bomb;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            
+			div {
+				display: inline-block;
+				position: absolute; /* 절대 배치 */
+				border-image: url(media/x-mas.png)round;
+			}
+            
+            img{position:absolute}
+            
+			div > p {
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 25px;
+				width: 20px;
+				background: orange;
+			}
+            
+            #audio {
+                position: absolute;
+                top: 600px;
+            }
+        
+            #fixed {
+				position: fixed;
+				top: 550px;
+				left: 10px;
+                width: 100px;
+				padding: 5px;
+				background: yellowgreen;
+				color: white;
+			}
+            
+            
+
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>Merry Christmas!</h3>
+		<hr>
+        
+        <div>
+            <img src="media/x-mas.png" width="310px" height="440px" alt="테두리">
+        </div>
+        
+		<div>
+            
+			<img src="media/christmastree.png"
+			width="300px" height="400px" alt="크리스마스 트리">
+            <img src="media/gift.JPG" width="50" height="50" style="left: 90px; top:150px">
+            <img src="media/socks.jpg" width="50" height="50" style="left: 200px; top:250px">
+			<p style="left:90px; top:80px">
+				M
+			</p>
+			<p style="left:125px; top:100px">
+				E
+			</p>
+			<p style="left:160px;top:120px">
+				R
+			</p>
+			<p style="left:195px; top:140px">
+				R
+			</p>
+			<p style="left:230px; top:160px">
+				Y
+			</p>
+            <p style="left:195px; top:190px">
+				X
+			</p>
+            <p style="left:160px; top:210px">
+				-
+			</p>
+            <p style="left:125px; top:230px">
+				M
+			</p>
+            <p style="left:90px; top:250px">
+				A
+			</p>
+            <p style="left:60px; top:270px">
+				S
+			</p>
+		</div>
+        <div id="audio">
+        <audio src="media/jinglebell.MP3" style="left: 10px; top: 400px" controls autoplay loop ></audio></div>
+        
+        <div id="fixed">hm.26 오주현</div>
+
+	</body>
+
+</html>
