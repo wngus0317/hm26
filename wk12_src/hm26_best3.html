@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm26 : Javascript BOM</title>
+    <style></style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>좋아하는 영화</h3>
+    <hr />
+    영화를 고르세요 :
+    <select id="site">
+      <option value= "">좋아하는 영화를 고르세요 </option>
+      <option value="https://movie.naver.com/movie/bi/mi/mediaView.nhn?code=177967&mid=42237#tab">악인전 예고편 </option>
+      <option value="https://movie.naver.com/movie/bi/mi/mediaView.nhn?code=136900&mid=41896#tab">어벤져스 앤드게임 예고편 </option>
+      <option value="https://movie.naver.com/movie/bi/mi/mediaView.nhn?code=164125&mid=42006#tab">엑스맨 다크 피닉스 예고편 </option>
+    </select>
+
+    <p>
+      <button onclick="load()">웹 사이트 접속</button>
+    </p>
+  </body>
+</html>
