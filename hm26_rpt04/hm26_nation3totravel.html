@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>tm26_nation 3 to travel</title>
+    <style>
+        h3 {
+            background: mistyrose;
+        }
+
+        #Switzerland {
+            background: aliceblue;
+        }
+
+        #Iceland {
+            background: lightblue;
+        }
+
+        #Canada {
+            background: aliceblue;
+        }
+    </style>
+    <script>
+        function hideMenu() {
+            alert("마우스 오른쪽 클릭은 금지됩니다");
+            return false;
+        }
+        document.oncontextmenu = hideMenu;
+
+        function changeImage() {
+            var sel = document.getElementById("countries");
+            var img = document.getElementById("countriesimage");
+            img.src = sel.options[sel.selectedIndex].value;
+        }
+    </script>
+</head>
+
+
+<body onload="changeImage()">
+    <h2>여행 하고 싶은 세 나라</h2>
+    <hr><br>
+    <h3>여행하고 싶은 나라</h3>
+
+    <form>
+        <p>나라 별 국기 선택해서 보기</p>
+        <select id='countries' onchange="changeImage()">
+            <option value="media/Switzerland.jpg"> 스위스 </option>
+            <option value="media/Iceland.jpg"> 아이슬란드 </option>
+            <option value="media/Canada.jpg"> 캐나다 </option>
+        </select>
+        <img id="countriesimage" src=“media/Switzerland.jpg" height="150" width="200" alt="">
+    </form><br><br><br><br><br>
+
+    <p>세 나라에 대한 간단한 설명보기</p><br><br>
+    <div id="Switzerland">
+        <ul> 스위스
+            <li> 국기<br>
+                <img src="media/Switzerland.jpg" height="150" width="200">
+            <li> 수도 : 베른
+            <li> 면적 : 412만 9천ha (세계 133위)
+            <li> 인구 : 약 860만 8,259명 (세계 98위)
+            <li> 유명 관광지 : 알프스 융프라우, 레만호, 몽트뢰, 베른
+        </ul>
+    </div>
+    <br>
+    <div id="Iceland">
+        <ul> 아이슬란드
+            <li> 국기<br>
+                <img src="media/Iceland.jpg" height="150" width="200">
+            <li> 수도 : 레이캬비크
+            <li> 면적 : 1,030만 ha (세계 106위)
+            <li> 인구 : 약 34만 566명 (세계 179위)
+            <li> 유명 관광지 : 셀랴란드스포스, 골든서클, 블루라군
+        </ul>
+    </div>
+    <br>
+    <div id="Canada">
+        <ul> 캐나다
+            <li> 국기<br>
+                <img src="media/Canada.jpg" height="150" width="200">
+            <li> 수도 : 오타와
+            <li> 면적 : 9억 9,846만 7천ha (세계 2위)
+            <li> 인구 : 약 3,727만 9,811명 (세계 38위)
+            <li> 유명 관광지 : 퀘벡, 스탠리 파크, 나이아가라폭포 <br><br><br>
+        </ul>
+    </div>
+
+</body>
+
+
+</html>
